@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Omega Care design tokens
+   Palette taken from the official brand sheet:
+     teal   #0C7183  -> primary medical colour
+     purple #652D91  -> brand identity
+     orange #F5942F  -> calls to action
+     green  #8BC63E  -> positive states
+   ========================================================================== */
+
+@theme {
+  /* ---- brand: teal (primary) ---- */
+  --color-teal-50: #ecfafb;
+  --color-teal-100: #d0f2f5;
+  --color-teal-200: #a5e4ea;
+  --color-teal-300: #6fcfd9;
+  --color-teal-400: #38b2c1;
+  --color-teal-500: #1590a2;
+  --color-teal-600: #0c7183;
+  --color-teal-700: #0c5a69;
+  --color-teal-800: #104954;
+  --color-teal-900: #123d46;
+  --color-teal-950: #06272e;
+
+  /* ---- brand: purple (identity) ---- */
+  --color-brand-50: #f7f2fc;
+  --color-brand-100: #ede3f9;
+  --color-brand-200: #dcc9f3;
+  --color-brand-300: #c3a2e8;
+  --color-brand-400: #a576d8;
+  --color-brand-500: #8b4fc4;
+  --color-brand-600: #7638ac;
+  --color-brand-700: #652d91;
+  --color-brand-800: #542877;
+  --color-brand-900: #472363;
+  --color-brand-950: #2d0f43;
+
+  /* ---- brand: orange (CTA) ---- */
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed8aa;
+  --color-accent-300: #fdbd74;
+  --color-accent-400: #fba04a;
+  --color-accent-500: #f5942f;
+  --color-accent-600: #e07715;
+  --color-accent-700: #b95a13;
+  --color-accent-800: #934717;
+  --color-accent-900: #773c16;
+  --color-accent-950: #401c07;
+
+  /* ---- brand: green (positive) ---- */
+  --color-positive-50: #f6fbeb;
+  --color-positive-100: #eaf6d2;
+  --color-positive-200: #d5edaa;
+  --color-positive-300: #b8df78;
+  --color-positive-400: #9dd152;
+  --color-positive-500: #8bc63e;
+  --color-positive-600: #63992a;
+  --color-positive-700: #4c7524;
+  --color-positive-800: #3f5d22;
+  --color-positive-900: #364f21;
+  --color-positive-950: #1a2c0c;
+
+  /* ---- neutral surface scale ---- */
+  --color-ink-50: #f7f8f9;
+  --color-ink-100: #eef0f2;
+  --color-ink-200: #dfe3e7;
+  --color-ink-300: #c5ccd3;
+  --color-ink-400: #97a2ad;
+  --color-ink-500: #6b7783;
+  --color-ink-600: #4e5a66;
+  --color-ink-700: #3a444e;
+  --color-ink-800: #262d34;
+  --color-ink-900: #171c21;
+
+  /* ---- semantic aliases ---- */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-muted: var(--color-ink-50);
+  --color-foreground: var(--color-ink-800);
+  --color-muted-foreground: var(--color-ink-500);
+  --color-border-subtle: var(--color-ink-200);
+
+  /* ---- typography ---- */
+  /* `--font-omega-ar` / `--font-omega-en` are injected by next/font in the root layout. */
+  --font-sans: var(--font-omega-ar), var(--font-omega-en), ui-sans-serif, system-ui,
+    "Segoe UI", Tahoma, sans-serif;
+  --font-latin: var(--font-omega-en), ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- radii + elevation (rounded cards, soft shadows) ---- */
+  --radius-card: 1.25rem;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 1px 2px rgb(23 28 33 / 0.04), 0 8px 24px -12px rgb(23 28 33 / 0.12);
+  --shadow-card: 0 1px 2px rgb(23 28 33 / 0.05), 0 12px 32px -16px rgb(23 28 33 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(23 28 33 / 0.06), 0 20px 44px -20px rgb(12 113 131 / 0.28);
+
+  /* ---- motion (subtle only) ---- */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border-subtle);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Latin text inside an Arabic page still gets the Latin face. */
+  [lang="en"] body,
+  .font-latin {
+    font-family: var(--font-latin);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-teal-600);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: var(--color-teal-100);
+    color: var(--color-teal-900);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@utility container-page {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-inline: 1rem;
+  @media (min-width: 640px) {
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding-inline: 2rem;
+  }
+}
+
+/* Subtle brand gradient used behind hero / CTA blocks. */
+@utility brand-gradient {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-teal-700) 0%,
+    var(--color-teal-600) 42%,
+    var(--color-brand-700) 100%
+  );
+}
+
+@utility brand-gradient-soft {
+  background-image: linear-gradient(
+    160deg,
+    var(--color-teal-50) 0%,
+    #ffffff 45%,
+    var(--color-brand-50) 100%
+  );
+}
