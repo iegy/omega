@@ -1,0 +1,732 @@
+{
+  "common": {
+    "skipToContent": "تخطَّ إلى المحتوى",
+    "loading": "جارٍ التحميل…",
+    "comingSoon": "قريبًا",
+    "viewAll": "عرض الكل",
+    "readMore": "اقرأ المزيد",
+    "back": "رجوع",
+    "backHome": "العودة إلى الرئيسية",
+    "close": "إغلاق",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "search": "بحث",
+    "phone": "الهاتف",
+    "secondaryPhone": "هاتف آخر",
+    "whatsapp": "واتساب",
+    "address": "العنوان",
+    "currency": "جنيه",
+    "priceOnRequest": "السعر يُحدَّد عند الحجز",
+    "notAvailable": "غير متاح"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "doctors": "الأطباء",
+    "specialties": "التخصصات",
+    "services": "الخدمات والأجهزة",
+    "labs": "معامل مودة عاطف",
+    "aesthetics": "التجميل والليزر",
+    "offers": "العروض",
+    "about": "عن أوميجا كير",
+    "founder": "المؤسس",
+    "store": "المتجر",
+    "contact": "اتصل بنا",
+    "more": "المزيد",
+    "mainLabel": "القائمة الرئيسية",
+    "mobileLabel": "قائمة الموقع"
+  },
+  "cta": {
+    "book": "احجز موعدك",
+    "browseDoctors": "تصفح الأطباء",
+    "call": "اتصل بنا",
+    "whatsapp": "واتساب",
+    "viewMap": "عرض الموقع",
+    "getDirections": "الاتجاهات",
+    "requestSample": "اطلب سحب عينة",
+    "meetFounder": "تعرف على المؤسس",
+    "todaysDoctors": "أطباء اليوم",
+    "visitLab": "معامل مودة عاطف",
+    "aboutOmega": "عن أوميجا كير"
+  },
+  "languageSwitcher": {
+    "label": "اللغة",
+    "ar": "العربية",
+    "en": "English"
+  },
+  "home": {
+    "quickActions": {
+      "title": "خدمات سريعة",
+      "bookDoctor": "احجز طبيب",
+      "todaysDoctors": "أطباء اليوم",
+      "contact": "اتصل بنا",
+      "whatsapp": "واتساب",
+      "lab": "معامل مودة عاطف",
+      "sampleRequest": "اطلب سحب عينة"
+    },
+    "doctorsToday": {
+      "title": "أطباء اليوم",
+      "subtitle": "الأطباء المتواجدون اليوم حسب جدول العيادات."
+    },
+    "specialties": {
+      "title": "التخصصات",
+      "subtitle": "تخصصات متكاملة تحت سقف واحد."
+    },
+    "featuredDoctors": {
+      "title": "نخبة الأطباء",
+      "subtitle": "أطباء واستشاريون في مختلف التخصصات."
+    },
+    "services": {
+      "title": "الخدمات والأجهزة الطبية",
+      "subtitle": "خدمات تشخيصية وأجهزة طبية داخل المجمع."
+    },
+    "offers": {
+      "title": "العروض الحالية",
+      "subtitle": "عروض وخصومات سارية على خدمات مختارة."
+    },
+    "lab": {
+      "title": "معامل مودة عاطف",
+      "subtitle": "معمل تحاليل متخصص تابع لمنظومة أوميجا كير، مع خدمة سحب العينات من المنزل."
+    },
+    "aesthetics": {
+      "title": "التجميل والليزر",
+      "subtitle": "وحدة متخصصة للعناية بالبشرة والشعر والليزر."
+    },
+    "whyUs": {
+      "title": "لماذا أوميجا كير",
+      "subtitle": "مجمع طبي متكامل يجمع الأطباء والخدمات التشخيصية والمعمل في مكان واحد.",
+      "items": {
+        "doctors": {
+          "title": "نخبة من الأطباء والاستشاريين",
+          "description": "تخصصات متعددة داخل المجمع، من الباطنة والقلب والمسالك إلى العظام والنساء والأطفال."
+        },
+        "diagnostics": {
+          "title": "خدمات تشخيصية وأجهزة طبية",
+          "description": "سونار، إيكو، رسم قلب، قياس وظائف التنفس، رسم أعصاب، قياس سمع واتزان وغيرها."
+        },
+        "lab": {
+          "title": "معمل تحاليل تابع للمجمع",
+          "description": "معامل مودة عاطف بوحدات متخصصة، مع إمكانية سحب العينات من المنزل."
+        },
+        "booking": {
+          "title": "حجز إلكتروني بدون حساب",
+          "description": "اختر الطبيب والخدمة والموعد وأكمل الحجز في خطوات قليلة دون تسجيل."
+        },
+        "payments": {
+          "title": "طرق دفع متعددة",
+          "description": "الدفع نقدًا داخل العيادة أو عبر المحفظة الإلكترونية أو إنستاباي."
+        },
+        "location": {
+          "title": "مكان واحد لكل احتياجاتك",
+          "description": "عيادات وخدمات تشخيصية ووحدة تجميل وليزر ومعمل في موقع واحد برشيد."
+        }
+      }
+    },
+    "founder": {
+      "title": "مؤسس أوميجا كير",
+      "subtitle": "رؤية إدارية وصحية لبناء مجمع طبي متكامل."
+    },
+    "testimonials": {
+      "title": "آراء المرضى",
+      "subtitle": "تجارب حقيقية لمرضى أوميجا كير."
+    },
+    "location": {
+      "title": "موقعنا",
+      "subtitle": "عيادات أوميجا كير – رشيد."
+    },
+    "bookingCta": {
+      "title": "جاهز لحجز موعدك؟",
+      "subtitle": "اختر التخصص والطبيب والموعد المناسب لك، وأكمل الحجز في دقائق."
+    }
+  },
+  "pages": {
+    "doctors": {
+      "title": "الأطباء",
+      "subtitle": "أطباء واستشاريون في مختلف التخصصات داخل مجمع أوميجا كير."
+    },
+    "doctorProfile": {
+      "title": "ملف الطبيب",
+      "subtitle": "المؤهلات والخدمات والمواعيد المتاحة."
+    },
+    "specialties": {
+      "title": "التخصصات",
+      "subtitle": "تعرف على التخصصات المتاحة واختر ما يناسب حالتك."
+    },
+    "specialtyProfile": {
+      "title": "التخصص",
+      "subtitle": "الأطباء والخدمات المرتبطة بهذا التخصص."
+    },
+    "services": {
+      "title": "الخدمات والأجهزة الطبية",
+      "subtitle": "خدمات تشخيصية وعلاجية وأجهزة طبية داخل المجمع."
+    },
+    "serviceProfile": {
+      "title": "الخدمة",
+      "subtitle": "تفاصيل الخدمة والأطباء المرتبطين بها."
+    },
+    "aesthetics": {
+      "title": "التجميل والليزر",
+      "subtitle": "خدمات العناية بالبشرة والشعر والليزر والتنحيف داخل أوميجا كير."
+    },
+    "offers": {
+      "title": "العروض والخصومات",
+      "subtitle": "العروض السارية على خدمات وأطباء ووحدات المجمع."
+    },
+    "labs": {
+      "title": "معامل مودة عاطف",
+      "subtitle": "معمل تحاليل متخصص تابع لمنظومة أوميجا كير."
+    },
+    "about": {
+      "title": "عن أوميجا كير",
+      "subtitle": "مجمع طبي متكامل في رشيد."
+    },
+    "founder": {
+      "title": "المؤسس",
+      "subtitle": "التعريف بمؤسس عيادات أوميجا كير التخصصية."
+    },
+    "store": {
+      "title": "متجر أوميجا",
+      "subtitle": "نعمل حاليًا على تجهيز متجر أوميجا كير للمستلزمات الطبية ومنتجات العناية والتجميل.",
+      "note": "سيتم الإعلان عن موعد إطلاق المتجر عبر صفحاتنا الرسمية."
+    },
+    "contact": {
+      "title": "اتصل بنا",
+      "subtitle": "أرقام العيادات والمعمل وطرق التواصل والموقع."
+    },
+    "booking": {
+      "title": "حجز موعد",
+      "subtitle": "اختر التخصص ثم الطبيب ثم الخدمة والموعد المناسب."
+    },
+    "bookingSuccess": {
+      "title": "تم تأكيد الحجز",
+      "subtitle": "احتفظ برقم الحجز وأحضره معك عند الزيارة."
+    }
+  },
+  "states": {
+    "loading": "جارٍ التحميل…",
+    "awaitingData": {
+      "title": "لم يتم ربط البيانات بعد",
+      "description": "هذا القسم جاهز من ناحية الواجهة وسيعرض البيانات الفعلية بعد ربط قاعدة البيانات في المرحلة القادمة."
+    },
+    "empty": {
+      "title": "لا توجد بيانات لعرضها",
+      "description": "لم تُضف عناصر في هذا القسم حتى الآن."
+    },
+    "error": {
+      "title": "حدث خطأ غير متوقع",
+      "description": "تعذّر تحميل هذا الجزء. حاول مرة أخرى، وإذا استمرت المشكلة تواصل معنا.",
+      "retry": "إعادة المحاولة"
+    }
+  },
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "contactUs": "تواصل معنا",
+    "followUs": "تابعنا",
+    "labPhones": "أرقام المعمل",
+    "storeSoon": "متجر أوميجا – قريبًا"
+  },
+  "floating": {
+    "label": "إجراءات سريعة",
+    "whatsapp": "تواصل عبر واتساب",
+    "call": "اتصال هاتفي",
+    "book": "حجز موعد"
+  },
+  "admin": {
+    "title": "لوحة التحكم",
+    "brand": "أوميجا كير – الإدارة",
+    "signIn": "تسجيل الدخول",
+    "signOut": "تسجيل الخروج",
+    "backToSite": "العودة إلى الموقع",
+    "nav": {
+      "overview": "نظرة عامة",
+      "appointments": "الحجوزات",
+      "doctors": "الأطباء",
+      "specialties": "التخصصات",
+      "services": "الخدمات",
+      "offers": "العروض",
+      "lab": "المعمل",
+      "founder": "المؤسس",
+      "content": "محتوى الموقع",
+      "settings": "الإعدادات",
+      "backup": "النسخ الاحتياطي والاستعادة"
+    },
+    "pending": {
+      "title": "هذه الشاشة قيد التنفيذ",
+      "description": "تم تجهيز المسار والتنقل والتصميم. الوظائف الفعلية تُبنى في المرحلة المخصصة لها."
+    }
+  },
+  "notFound": {
+    "title": "الصفحة غير موجودة",
+    "description": "الرابط الذي فتحته غير صحيح أو تم نقل الصفحة.",
+    "home": "العودة إلى الرئيسية",
+    "doctors": "تصفح الأطباء"
+  },
+  "errorPage": {
+    "title": "حدث خطأ ما",
+    "description": "نأسف لذلك. حاول تحديث الصفحة، وإذا استمر الخطأ تواصل معنا هاتفيًا.",
+    "retry": "إعادة المحاولة"
+  },
+  "errors": {
+    "notConfigured": "لم يتم إكمال إعداد الاتصال بقاعدة البيانات. راجع إعدادات المشروع.",
+    "network": "تعذّر الاتصال بالخدمة. تحقق من الإنترنت ثم حاول مرة أخرى.",
+    "permissionDenied": "لا تملك صلاحية تنفيذ هذا الإجراء.",
+    "unauthenticated": "انتهت الجلسة. يُرجى تسجيل الدخول من جديد.",
+    "notFound": "العنصر المطلوب غير موجود.",
+    "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+    "accountDisabled": "تم تعطيل هذا الحساب. تواصل مع المسؤول العام.",
+    "tooManyRequests": "محاولات كثيرة جدًا. انتظر قليلًا ثم حاول مرة أخرى.",
+    "signInMethodDisabled": "طريقة تسجيل الدخول غير مُفعّلة في مشروع Firebase.",
+    "invalidEmail": "صيغة البريد الإلكتروني غير صحيحة.",
+    "unknown": "حدث خطأ غير متوقع. حاول مرة أخرى."
+  },
+  "auth": {
+    "loginTitle": "تسجيل دخول الإدارة",
+    "loginSubtitle": "هذه الصفحة مخصصة لفريق عيادات أوميجا كير فقط.",
+    "patientsNote": "المرضى لا يحتاجون إلى حساب — الحجز الإلكتروني متاح للجميع بدون تسجيل.",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+    "submit": "تسجيل الدخول",
+    "submitting": "جارٍ تسجيل الدخول…",
+    "loadingSession": "جارٍ التحقق من الجلسة…",
+    "signedInAs": "مسجَّل الدخول باسم",
+    "signOut": "تسجيل الخروج",
+    "signingOut": "جارٍ تسجيل الخروج…",
+    "goToDashboard": "الدخول إلى لوحة التحكم",
+    "deniedTitle": "غير مصرح بالدخول",
+    "deniedDescription": "تم التحقق من هويتك بنجاح، لكن هذا الحساب غير مُسجَّل كحساب إدارة. تواصل مع المسؤول العام لإضافة صلاحياتك.",
+    "inactiveTitle": "الحساب موقوف",
+    "inactiveDescription": "حساب الإدارة الخاص بك موقوف حاليًا. تواصل مع المسؤول العام لتفعيله من جديد.",
+    "errorTitle": "تعذّر التحقق من الصلاحيات",
+    "notConfiguredTitle": "إعداد Firebase غير مكتمل",
+    "notConfiguredDescription": "لم يتم العثور على متغيرات Firebase. أنشئ ملف .env.local من .env.example ثم أعد تشغيل الخادم.",
+    "roleLabel": "الصلاحية",
+    "roles": {
+      "super_admin": "مسؤول عام",
+      "admin": "مسؤول",
+      "reception": "استقبال"
+    },
+    "validation": {
+      "emailRequired": "أدخل البريد الإلكتروني.",
+      "emailInvalid": "صيغة البريد الإلكتروني غير صحيحة.",
+      "passwordRequired": "أدخل كلمة المرور.",
+      "passwordMin": "كلمة المرور قصيرة جدًا."
+    },
+    "noPermission": {
+      "title": "لا تملك صلاحية لهذه الشاشة",
+      "description": "صلاحيتك الحالية لا تسمح بالوصول إلى هذا القسم. تواصل مع المسؤول العام إذا كنت تحتاج إليه."
+    }
+  },
+  "directory": {
+    "searchLabel": "ابحث بالاسم",
+    "searchPlaceholder": "اكتب اسم الطبيب…",
+    "specialtyLabel": "التخصص",
+    "allSpecialties": "كل التخصصات",
+    "clear": "إزالة الفلاتر",
+    "resultsOne": "طبيب واحد",
+    "resultsTwo": "طبيبان",
+    "resultsMany": "{count} طبيب",
+    "noResultsTitle": "لا يوجد طبيب مطابق",
+    "noResultsDescription": "جرّب اسمًا آخر أو اختر «كل التخصصات»."
+  },
+  "doctor": {
+    "specialties": "التخصص",
+    "qualifications": "مؤهلات ومهارات",
+    "schedule": "مواعيد العمل الأسبوعية",
+    "prices": "أسعار الكشف والخدمات",
+    "services": "خدمات يقدمها الطبيب",
+    "viewProfile": "ملف الطبيب",
+    "consultationFrom": "الكشف من",
+    "noSchedule": "لم تُنشر مواعيد لهذا الطبيب بعد.",
+    "noPrices": "لم تُعلن أسعار لهذا الطبيب حتى الآن.",
+    "noQualifications": "لم تُضف مؤهلات إضافية.",
+    "bookingSoonTitle": "الحجز الإلكتروني لهذا الطبيب لم يُفتح بعد",
+    "bookingSoonDescription": "لم تُحدَّد بعد طريقة تنظيم المواعيد لهذه الفترات. للحجز الآن تواصل مع الاستقبال هاتفيًا أو عبر واتساب.",
+    "otherDoctors": "أطباء آخرون"
+  },
+  "schedule": {
+    "day": "اليوم",
+    "time": "التوقيت",
+    "note": "ملاحظة",
+    "openEnded": "من {from}",
+    "closedToday": "لا توجد عيادة اليوم",
+    "today": "اليوم",
+    "modeSlot": "مواعيد محددة",
+    "modeQueue": "بنظام الدور",
+    "modePending": "التنظيم قيد التحديد"
+  },
+  "price": {
+    "onRequest": "السعر عند الاستقبال",
+    "kind": {
+      "consultation": "كشف",
+      "followUp": "استشارة متابعة",
+      "session": "جلسة",
+      "examination": "فحص",
+      "device": "جهاز",
+      "procedure": "إجراء"
+    }
+  },
+  "specialtyPage": {
+    "doctorsTitle": "أطباء التخصص",
+    "servicesTitle": "خدمات مرتبطة",
+    "noDoctors": "لا يوجد أطباء مسجّلون في هذا التخصص حاليًا.",
+    "doctorsCountOne": "طبيب واحد",
+    "doctorsCountTwo": "طبيبان",
+    "doctorsCountMany": "{count} طبيب",
+    "browseAll": "كل التخصصات"
+  },
+  "servicePage": {
+    "categoryTitle": "التصنيف",
+    "doctorsTitle": "الأطباء الذين يقدمون الخدمة",
+    "specialtiesTitle": "التخصصات المرتبطة",
+    "pricesTitle": "أسعار الأطباء لهذه الخدمة",
+    "pricesNote": "السعر يخص الطبيب المذكور ولا يُعمَّم على باقي الأطباء. الأسعار غير المعلنة تُحدَّد في الاستقبال.",
+    "relatedTitle": "خدمات من نفس التصنيف",
+    "noDoctors": "لم يُربط أطباء بهذه الخدمة بعد.",
+    "requiresBooking": "تتطلب حجز موعد",
+    "servicesCountOne": "خدمة واحدة",
+    "servicesCountTwo": "خدمتان",
+    "servicesCountMany": "{count} خدمة",
+    "allServices": "كل الخدمات"
+  },
+  "labPage": {
+    "unitsTitle": "وحدات المعمل",
+    "contactTitle": "أرقام المعمل",
+    "sampleTitle": "سحب العينات",
+    "sampleDescription": "يوفّر معمل مودة عاطف خدمة سحب العينات من المنازل والمستشفيات والعيادات.",
+    "sampleHome": "من المنازل",
+    "sampleHospital": "من المستشفيات",
+    "sampleClinic": "من العيادات",
+    "samplePending": "طلب سحب العينات إلكترونيًا سيُتاح قريبًا. للحجز الآن اتصل بأرقام المعمل.",
+    "hoursUnknown": "مواعيد العمل غير معلنة — يُرجى الاتصال للاستفسار.",
+    "unitsCountMany": "{count} وحدة متخصصة"
+  },
+  "founderPage": {
+    "qualificationsTitle": "المؤهلات العلمية",
+    "visionTitle": "الرؤية",
+    "messageTitle": "كلمة المؤسس",
+    "yearUnknown": "التاريخ غير معلن"
+  },
+  "offersPage": {
+    "noneTitle": "لا توجد عروض سارية حاليًا",
+    "noneDescription": "لم تُعلن عيادات أوميجا كير أي عرض في الوقت الحالي. تابع صفحاتنا الرسمية لمعرفة العروض الجديدة.",
+    "validUntil": "ساري حتى {date}",
+    "validFrom": "يبدأ من {date}",
+    "discountPercentage": "خصم {value}%",
+    "discountFixed": "خصم {value}",
+    "specialPrice": "سعر خاص",
+    "wasPrice": "كان {price}"
+  },
+  "homeSections": {
+    "doctorsTodayEmpty": "لا توجد عيادات مُعلنة اليوم. تصفّح كل الأطباء لمعرفة مواعيد الأسبوع.",
+    "specialtiesEmpty": "لم تُضف تخصصات بعد.",
+    "featuredDoctorsEmpty": "لم يُحدَّد أطباء مميزون بعد.",
+    "servicesEmpty": "لم تُضف خدمات بعد.",
+    "offersEmpty": "لا توجد عروض سارية حاليًا.",
+    "testimonialsEmpty": "لم تُنشر آراء موثّقة بعد."
+  },
+  "aboutPage": {
+    "introTitle": "عن أوميجا كير",
+    "factsTitle": "المجمع في أرقام",
+    "factsNote": "الأرقام مأخوذة من سجلات العيادات المنشورة على هذا الموقع.",
+    "doctorsFact": "طبيب واستشاري",
+    "specialtiesFact": "تخصص طبي",
+    "servicesFact": "خدمة وفحص",
+    "labUnitsFact": "وحدة معملية",
+    "exploreTitle": "تعرّف على أقسام المجمع",
+    "doctorsLink": "الأطباء والاستشاريون",
+    "specialtiesLink": "التخصصات الطبية",
+    "servicesLink": "الخدمات والفحوصات",
+    "labLink": "معامل مودة عاطف",
+    "aestheticsLink": "التجميل والليزر",
+    "founderLink": "مؤسس المجمع",
+    "locationTitle": "المكان ومواعيد التواصل"
+  },
+  "publicCache": {
+    "noticeTitle": "قد تستغرق التغييرات حتى {minutes} دقيقة للظهور",
+    "noticeDescription": "يتم تخزين بيانات الموقع العام مؤقتًا على شبكة Cloudflare لمدة 30 دقيقة لتقليل استهلاك قاعدة البيانات. التعديلات تُحفظ فورًا في قاعدة البيانات وتظهر هنا في لوحة التحكم مباشرة، بينما قد تحتاج الصفحات العامة حتى 30 دقيقة.",
+    "savedTitle": "تم الحفظ",
+    "savedDescription": "ظهور التغيير على الموقع العام قد يستغرق حتى 30 دقيقة."
+  },
+  "adminForm": {
+    "arabic": "العربية",
+    "english": "English",
+    "save": "حفظ",
+    "saving": "جارٍ الحفظ…",
+    "cancel": "إلغاء",
+    "create": "إضافة",
+    "edit": "تعديل",
+    "close": "إغلاق",
+    "addLine": "إضافة سطر",
+    "removeLine": "حذف السطر",
+    "required": "هذا الحقل مطلوب",
+    "invalidSlug": "استخدم حروفًا إنجليزية صغيرة وأرقامًا وشرطات فقط",
+    "invalidTime": "صيغة الوقت يجب أن تكون HH:mm",
+    "invalidNumber": "أدخل رقمًا صحيحًا",
+    "negativeNumber": "لا يمكن أن يكون الرقم سالبًا",
+    "slugHint": "يظهر في رابط الصفحة، ولا يُنصح بتغييره بعد النشر.",
+    "optional": "اختياري — اتركه فارغًا إذا لم تتوفر المعلومة",
+    "nullNote": "الحقول الفارغة تُحفظ كـ «غير متوفر» ولا تظهر للزائر.",
+    "saved": "تم الحفظ",
+    "saveFailed": "تعذّر الحفظ",
+    "unsavedChanges": "توجد تغييرات غير محفوظة"
+  },
+  "adminImage": {
+    "upload": "رفع صورة",
+    "replace": "استبدال الصورة",
+    "remove": "إزالة",
+    "hint": "JPG أو PNG أو WEBP أو GIF، بحد أقصى {max} ميجابايت. تُرفع الصور إلى ImgBB ويُحفظ الرابط فقط.",
+    "manageOnImgbb": "إدارة الصورة على ImgBB",
+    "errorSize": "حجم الصورة أكبر من {max} ميجابايت.",
+    "errorType": "نوع الملف غير مدعوم. استخدم JPG أو PNG أو WEBP أو GIF.",
+    "errorUpload": "تعذّر رفع الصورة. حاول مرة أخرى.",
+    "errorNotConfigured": "مفتاح ImgBB غير مُعد. راجع إعدادات البيئة."
+  },
+  "adminList": {
+    "search": "بحث",
+    "searchPlaceholder": "ابحث…",
+    "add": "إضافة جديد",
+    "empty": "لا توجد سجلات بعد",
+    "emptyHint": "ابدأ بإضافة أول سجل.",
+    "loading": "جارٍ التحميل…",
+    "loadFailed": "تعذّر تحميل البيانات",
+    "retry": "إعادة المحاولة",
+    "active": "ظاهر",
+    "inactive": "مخفي",
+    "activate": "إظهار",
+    "deactivate": "إخفاء",
+    "edit": "تعديل",
+    "delete": "حذف نهائي",
+    "count": "{count} سجل",
+    "showHidden": "عرض المخفي أيضًا",
+    "actions": "إجراءات",
+    "reorderUp": "تحريك لأعلى",
+    "reorderDown": "تحريك لأسفل",
+    "orderSaved": "تم حفظ الترتيب"
+  },
+  "adminConfirm": {
+    "deleteTitle": "حذف نهائي",
+    "deleteDescription": "سيُحذف هذا السجل نهائيًا ولا يمكن التراجع. إن كنت تريد إخفاءه عن الموقع فقط فاستخدم «إخفاء» بدلًا من ذلك.",
+    "deleteTypePrompt": "اكتب {word} للتأكيد",
+    "deleteWord": "حذف",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "deactivateTitle": "إخفاء عن الموقع",
+    "deactivateDescription": "سيختفي هذا السجل من الموقع العام مع الاحتفاظ ببياناته."
+  },
+  "adminDoctors": {
+    "title": "الأطباء",
+    "addTitle": "إضافة طبيب",
+    "editTitle": "تعديل بيانات الطبيب",
+    "name": "اسم الطبيب",
+    "jobTitle": "الدرجة والتخصص المكتوب",
+    "bio": "نبذة",
+    "qualifications": "المؤهلات والمهارات",
+    "qualificationsAr": "المؤهلات (عربي)",
+    "qualificationsEn": "المؤهلات (إنجليزي)",
+    "specialties": "التخصصات",
+    "specialtiesHint": "اختر تخصصًا واحدًا على الأقل.",
+    "image": "صورة الطبيب",
+    "featured": "طبيب مميز",
+    "featuredHint": "يظهر في قسم «أطباء مميزون» بالصفحة الرئيسية.",
+    "showPrice": "إظهار الأسعار للزوار",
+    "showPriceHint": "عند الإيقاف تبقى الأسعار ظاهرة داخل خطوات الحجز فقط.",
+    "activeLabel": "ظاهر على الموقع",
+    "sortOrder": "ترتيب العرض",
+    "schedules": "مواعيد العمل",
+    "prices": "الأسعار والخدمات",
+    "specialtyRequired": "اختر تخصصًا واحدًا على الأقل"
+  },
+  "adminSchedules": {
+    "title": "مواعيد الطبيب",
+    "add": "إضافة موعد",
+    "day": "اليوم",
+    "startTime": "من الساعة",
+    "endTime": "إلى الساعة",
+    "endTimeHint": "اتركه فارغًا إذا لم تُعلن العيادة وقت انتهاء.",
+    "bookingMode": "طريقة الحجز",
+    "bookingModeHint": "الحجز الإلكتروني لا يُفتح لهذه الفترة حتى تختار طريقة.",
+    "modeNotSet": "لم تُحدَّد بعد",
+    "modeSlot": "مواعيد محددة",
+    "modeQueue": "بنظام الدور",
+    "slotDuration": "مدة الموعد (دقيقة)",
+    "maxPerSlot": "عدد الحجوزات لكل موعد",
+    "maxQueue": "أقصى عدد أدوار",
+    "note": "ملاحظة تظهر بجوار الموعد",
+    "activeLabel": "فعّال",
+    "slotFieldsRequired": "مدة الموعد وعدد الحجوزات مطلوبان في وضع المواعيد المحددة",
+    "queueFieldsRequired": "أقصى عدد أدوار مطلوب في وضع الدور",
+    "endBeforeStart": "وقت الانتهاء يجب أن يكون بعد وقت البدء"
+  },
+  "adminPrices": {
+    "title": "الأسعار",
+    "add": "إضافة بند",
+    "name": "اسم البند",
+    "description": "وصف",
+    "kind": "النوع",
+    "price": "السعر (ج.م)",
+    "priceHint": "اتركه فارغًا إذا لم يُحدَّد السعر بعد — سيظهر «السعر عند الاستقبال».",
+    "linkedService": "خدمة مرتبطة",
+    "noService": "بدون ربط",
+    "showPrice": "إظهار السعر للزوار",
+    "activeLabel": "فعّال"
+  },
+  "adminSpecialties": {
+    "title": "التخصصات",
+    "addTitle": "إضافة تخصص",
+    "editTitle": "تعديل التخصص",
+    "name": "اسم التخصص",
+    "description": "وصف التخصص",
+    "featured": "تخصص مميز",
+    "image": "صورة التخصص"
+  },
+  "adminCategories": {
+    "title": "تصنيفات الخدمات",
+    "addTitle": "إضافة تصنيف",
+    "editTitle": "تعديل التصنيف",
+    "name": "اسم التصنيف",
+    "description": "وصف"
+  },
+  "adminServices": {
+    "title": "الخدمات",
+    "addTitle": "إضافة خدمة",
+    "editTitle": "تعديل الخدمة",
+    "name": "اسم الخدمة",
+    "description": "وصف الخدمة",
+    "category": "التصنيف",
+    "noCategory": "بدون تصنيف",
+    "price": "السعر (ج.م)",
+    "showPrice": "إظهار السعر",
+    "requiresBooking": "تتطلب حجز موعد",
+    "doctors": "الأطباء المقدمون للخدمة",
+    "specialties": "التخصصات المرتبطة",
+    "featured": "خدمة مميزة",
+    "image": "صورة الخدمة"
+  },
+  "adminLab": {
+    "title": "المعمل",
+    "profileTitle": "بيانات المعمل",
+    "unitsTitle": "وحدات المعمل",
+    "name": "اسم المعمل",
+    "description": "وصف المعمل",
+    "phones": "أرقام المعمل",
+    "whatsapp": "واتساب المعمل",
+    "openingHours": "مواعيد العمل",
+    "openingHoursHint": "اتركه فارغًا إذا لم تُعلن المواعيد.",
+    "logo": "شعار المعمل",
+    "sampleEnabled": "تفعيل خدمة سحب العينات",
+    "sampleNote": "نص خدمة سحب العينات",
+    "addUnit": "إضافة وحدة",
+    "unitName": "اسم الوحدة",
+    "unitDescription": "وصف الوحدة"
+  },
+  "adminFounder": {
+    "title": "المؤسس",
+    "name": "الاسم",
+    "jobTitle": "الصفة",
+    "bio": "نبذة",
+    "vision": "الرؤية",
+    "message": "كلمة المؤسس",
+    "image": "صورة المؤسس",
+    "qualifications": "المؤهلات العلمية",
+    "addQualification": "إضافة مؤهل",
+    "qualificationTitle": "المؤهل",
+    "institution": "الجهة المانحة",
+    "year": "السنة",
+    "yearHint": "اتركه فارغًا إذا لم تُعلن السنة.",
+    "showOnHomepage": "عرض في الصفحة الرئيسية",
+    "activeLabel": "ظاهر على الموقع"
+  },
+  "adminContent": {
+    "title": "محتوى الموقع",
+    "homepageTitle": "أقسام الصفحة الرئيسية",
+    "homepageHint": "تحكّم في ظهور كل قسم وترتيبه.",
+    "sectionEnabled": "ظاهر",
+    "sortOrder": "الترتيب",
+    "sections": {
+      "hero": "الواجهة الرئيسية",
+      "quickActions": "إجراءات سريعة",
+      "doctorsToday": "أطباء اليوم",
+      "specialties": "التخصصات",
+      "featuredDoctors": "أطباء مميزون",
+      "services": "الخدمات",
+      "offers": "العروض",
+      "lab": "المعمل",
+      "aesthetics": "التجميل والليزر",
+      "whyUs": "لماذا أوميجا كير",
+      "founderPreview": "نبذة المؤسس",
+      "testimonials": "آراء المرضى",
+      "location": "الموقع",
+      "bookingCta": "دعوة للحجز"
+    }
+  },
+  "adminSettings": {
+    "title": "إعدادات العيادة",
+    "brandingTitle": "الهوية",
+    "clinicName": "اسم العيادة",
+    "tagline": "الشعار النصي",
+    "contactTitle": "بيانات التواصل",
+    "phone": "الهاتف الأساسي",
+    "secondaryPhone": "هاتف إضافي",
+    "whatsapp": "واتساب",
+    "email": "البريد الإلكتروني",
+    "labPhones": "أرقام المعمل",
+    "locationTitle": "الموقع",
+    "address": "العنوان",
+    "latitude": "خط العرض",
+    "longitude": "خط الطول",
+    "mapsUrl": "رابط خرائط جوجل",
+    "heroTitle": "الواجهة الرئيسية",
+    "heroHeading": "العنوان",
+    "heroSubtitle": "النص التعريفي",
+    "footerTitle": "التذييل",
+    "footerAbout": "نبذة التذييل",
+    "footerCopyright": "حقوق النشر",
+    "seoTitle": "إعدادات SEO",
+    "seoPageTitle": "عنوان الموقع",
+    "seoDescription": "وصف الموقع",
+    "seoKeywords": "الكلمات المفتاحية",
+    "socialTitle": "روابط التواصل",
+    "facebook": "فيسبوك",
+    "instagram": "إنستجرام",
+    "tiktok": "تيك توك",
+    "youtube": "يوتيوب",
+    "paymentsTitle": "إعدادات الدفع",
+    "cashEnabled": "الدفع نقدًا في العيادة",
+    "walletEnabled": "محفظة إلكترونية",
+    "instapayEnabled": "إنستا باي",
+    "walletNumber": "رقم المحفظة",
+    "instapayNumber": "حساب إنستا باي",
+    "paymentInstructions": "تعليمات الدفع",
+    "invalidUrl": "أدخل رابطًا صحيحًا يبدأ بـ https://"
+  },
+  "adminOffers": {
+    "title": "العروض",
+    "addTitle": "إضافة عرض",
+    "editTitle": "تعديل العرض",
+    "offerTitle": "عنوان العرض",
+    "description": "وصف العرض",
+    "image": "صورة العرض",
+    "discountType": "نوع الخصم",
+    "percentage": "نسبة مئوية",
+    "fixed": "مبلغ ثابت",
+    "specialPrice": "سعر خاص",
+    "discountValue": "قيمة الخصم",
+    "originalPrice": "السعر قبل الخصم",
+    "offerPrice": "سعر العرض",
+    "startDate": "يبدأ في",
+    "endDate": "ينتهي في",
+    "appliesTo": "ينطبق على",
+    "targets": "العناصر المستهدفة",
+    "targetsHint": "اتركه فارغًا لتطبيق العرض على القسم كاملًا.",
+    "featured": "عرض مميز",
+    "showOnHome": "عرض في الصفحة الرئيسية",
+    "activeLabel": "فعّال",
+    "endBeforeStart": "تاريخ الانتهاء يجب أن يكون بعد تاريخ البدء",
+    "targetDoctor": "طبيب",
+    "targetService": "خدمة",
+    "targetSpecialty": "تخصص",
+    "targetLab": "المعمل",
+    "targetAesthetics": "التجميل والليزر"
+  }
+}

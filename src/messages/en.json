@@ -1,0 +1,732 @@
+{
+  "common": {
+    "skipToContent": "Skip to content",
+    "loading": "Loading…",
+    "comingSoon": "Coming soon",
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "back": "Back",
+    "backHome": "Back to home",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "search": "Search",
+    "phone": "Phone",
+    "secondaryPhone": "Alternative phone",
+    "whatsapp": "WhatsApp",
+    "address": "Address",
+    "currency": "EGP",
+    "priceOnRequest": "Price confirmed at booking",
+    "notAvailable": "Not available"
+  },
+  "nav": {
+    "home": "Home",
+    "doctors": "Doctors",
+    "specialties": "Specialties",
+    "services": "Medical Services",
+    "labs": "Mawada Atef Lab",
+    "aesthetics": "Aesthetics & Laser",
+    "offers": "Offers",
+    "about": "About",
+    "founder": "Founder",
+    "store": "Store",
+    "contact": "Contact",
+    "more": "More",
+    "mainLabel": "Main navigation",
+    "mobileLabel": "Site menu"
+  },
+  "cta": {
+    "book": "Book Appointment",
+    "browseDoctors": "Browse Doctors",
+    "call": "Call us",
+    "whatsapp": "WhatsApp",
+    "viewMap": "View Map",
+    "getDirections": "Get Directions",
+    "requestSample": "Request Sample Collection",
+    "meetFounder": "Meet the Founder",
+    "todaysDoctors": "Today's Doctors",
+    "visitLab": "Mawada Atef Lab",
+    "aboutOmega": "About Omega Care"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "ar": "العربية",
+    "en": "English"
+  },
+  "home": {
+    "quickActions": {
+      "title": "Quick actions",
+      "bookDoctor": "Book a doctor",
+      "todaysDoctors": "Today's doctors",
+      "contact": "Contact us",
+      "whatsapp": "WhatsApp",
+      "lab": "Mawada Atef Lab",
+      "sampleRequest": "Request sample collection"
+    },
+    "doctorsToday": {
+      "title": "Doctors available today",
+      "subtitle": "Doctors on duty today according to the clinic schedule."
+    },
+    "specialties": {
+      "title": "Specialties",
+      "subtitle": "Comprehensive specialties under one roof."
+    },
+    "featuredDoctors": {
+      "title": "Our doctors",
+      "subtitle": "Consultants and specialists across many fields."
+    },
+    "services": {
+      "title": "Medical services & devices",
+      "subtitle": "Diagnostic services and medical devices inside the complex."
+    },
+    "offers": {
+      "title": "Current offers",
+      "subtitle": "Active offers and discounts on selected services."
+    },
+    "lab": {
+      "title": "Mawada Atef Lab",
+      "subtitle": "A specialized laboratory within Omega Care, with home sample collection."
+    },
+    "aesthetics": {
+      "title": "Aesthetics & Laser",
+      "subtitle": "A dedicated unit for skin, hair and laser care."
+    },
+    "whyUs": {
+      "title": "Why Omega Care",
+      "subtitle": "An integrated complex bringing doctors, diagnostics and the laboratory together in one place.",
+      "items": {
+        "doctors": {
+          "title": "Consultants and specialists",
+          "description": "Multiple specialties in-house — internal medicine, cardiology, urology, orthopaedics, obstetrics, paediatrics and more."
+        },
+        "diagnostics": {
+          "title": "Diagnostics & medical devices",
+          "description": "Ultrasound, echo, ECG, pulmonary function tests, nerve conduction studies, audiometry and balance testing."
+        },
+        "lab": {
+          "title": "An in-house laboratory",
+          "description": "Mawada Atef Lab with specialized units and optional home sample collection."
+        },
+        "booking": {
+          "title": "Online booking, no account needed",
+          "description": "Pick a doctor, service and time and finish your booking in a few steps — no sign-up."
+        },
+        "payments": {
+          "title": "Multiple payment methods",
+          "description": "Pay cash at the clinic, or online via mobile wallet or InstaPay."
+        },
+        "location": {
+          "title": "One place for everything",
+          "description": "Clinics, diagnostics, an aesthetics & laser unit and a laboratory on one site in Rashid."
+        }
+      }
+    },
+    "founder": {
+      "title": "Omega Care Founder",
+      "subtitle": "A management and healthcare vision behind an integrated medical complex."
+    },
+    "testimonials": {
+      "title": "Patient testimonials",
+      "subtitle": "Real experiences from Omega Care patients."
+    },
+    "location": {
+      "title": "Our location",
+      "subtitle": "Omega Care Clinics – Rashid."
+    },
+    "bookingCta": {
+      "title": "Ready to book?",
+      "subtitle": "Choose a specialty, a doctor and a time that suits you — it takes minutes."
+    }
+  },
+  "pages": {
+    "doctors": {
+      "title": "Doctors",
+      "subtitle": "Consultants and specialists across the Omega Care complex."
+    },
+    "doctorProfile": {
+      "title": "Doctor profile",
+      "subtitle": "Qualifications, services and available appointments."
+    },
+    "specialties": {
+      "title": "Specialties",
+      "subtitle": "Explore the available specialties and pick the right one for you."
+    },
+    "specialtyProfile": {
+      "title": "Specialty",
+      "subtitle": "Doctors and services linked to this specialty."
+    },
+    "services": {
+      "title": "Medical services & devices",
+      "subtitle": "Diagnostic and treatment services and medical devices inside the complex."
+    },
+    "serviceProfile": {
+      "title": "Service",
+      "subtitle": "Service details and the doctors who provide it."
+    },
+    "aesthetics": {
+      "title": "Aesthetics & Laser",
+      "subtitle": "Skin, hair, laser and body-contouring services at Omega Care."
+    },
+    "offers": {
+      "title": "Offers & discounts",
+      "subtitle": "Active offers across doctors, services and units of the complex."
+    },
+    "labs": {
+      "title": "Mawada Atef Lab",
+      "subtitle": "A specialized medical laboratory within the Omega Care group."
+    },
+    "about": {
+      "title": "About Omega Care",
+      "subtitle": "An integrated medical complex in Rashid."
+    },
+    "founder": {
+      "title": "Founder",
+      "subtitle": "About the founder of Omega Care Specialized Clinics."
+    },
+    "store": {
+      "title": "Omega Store",
+      "subtitle": "Our medical supplies and beauty care store is coming soon.",
+      "note": "The store launch date will be announced on our official pages."
+    },
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "Clinic and laboratory numbers, contact channels and location."
+    },
+    "booking": {
+      "title": "Book an appointment",
+      "subtitle": "Choose a specialty, then a doctor, then the service and time."
+    },
+    "bookingSuccess": {
+      "title": "Booking confirmed",
+      "subtitle": "Keep your booking ID and bring it with you to the clinic."
+    }
+  },
+  "states": {
+    "loading": "Loading…",
+    "awaitingData": {
+      "title": "Data not connected yet",
+      "description": "The interface for this section is ready and will show real records once the database is connected in the next phase."
+    },
+    "empty": {
+      "title": "Nothing to show yet",
+      "description": "No items have been added to this section so far."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "This part could not be loaded. Please try again, and contact us if the problem continues.",
+      "retry": "Try again"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick links",
+    "contactUs": "Contact",
+    "followUs": "Follow us",
+    "labPhones": "Laboratory numbers",
+    "storeSoon": "Omega Store – coming soon"
+  },
+  "floating": {
+    "label": "Quick actions",
+    "whatsapp": "Chat on WhatsApp",
+    "call": "Call the clinic",
+    "book": "Book an appointment"
+  },
+  "admin": {
+    "title": "Dashboard",
+    "brand": "Omega Care – Admin",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "backToSite": "Back to site",
+    "nav": {
+      "overview": "Overview",
+      "appointments": "Appointments",
+      "doctors": "Doctors",
+      "specialties": "Specialties",
+      "services": "Services",
+      "offers": "Offers",
+      "lab": "Laboratory",
+      "founder": "Founder",
+      "content": "Site content",
+      "settings": "Settings",
+      "backup": "Backup & Restore"
+    },
+    "pending": {
+      "title": "This screen is under construction",
+      "description": "The route, navigation and layout are in place. The functionality is built in its dedicated phase."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The link you opened is incorrect or the page has moved.",
+    "home": "Back to home",
+    "doctors": "Browse doctors"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "description": "Sorry about that. Try refreshing the page, and call us if the error continues.",
+    "retry": "Try again"
+  },
+  "errors": {
+    "notConfigured": "The database connection is not fully configured. Check the project setup.",
+    "network": "Could not reach the service. Check your connection and try again.",
+    "permissionDenied": "You do not have permission to perform this action.",
+    "unauthenticated": "Your session expired. Please sign in again.",
+    "notFound": "The requested item does not exist.",
+    "invalidCredentials": "Incorrect email or password.",
+    "accountDisabled": "This account has been disabled. Contact the super admin.",
+    "tooManyRequests": "Too many attempts. Please wait a moment and try again.",
+    "signInMethodDisabled": "This sign-in method is not enabled in the Firebase project.",
+    "invalidEmail": "That email address is not valid.",
+    "unknown": "Something went wrong. Please try again."
+  },
+  "auth": {
+    "loginTitle": "Admin sign in",
+    "loginSubtitle": "This page is for the Omega Care team only.",
+    "patientsNote": "Patients do not need an account — online booking is open to everyone.",
+    "email": "Email",
+    "password": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "loadingSession": "Checking your session…",
+    "signedInAs": "Signed in as",
+    "signOut": "Sign out",
+    "signingOut": "Signing out…",
+    "goToDashboard": "Open the dashboard",
+    "deniedTitle": "Access denied",
+    "deniedDescription": "Your identity was verified, but this account is not registered as an administrator. Ask the super admin to grant access.",
+    "inactiveTitle": "Account suspended",
+    "inactiveDescription": "Your administrator account is currently inactive. Ask the super admin to re-enable it.",
+    "errorTitle": "Could not verify your permissions",
+    "notConfiguredTitle": "Firebase configuration is incomplete",
+    "notConfiguredDescription": "No Firebase environment variables were found. Create .env.local from .env.example and restart the server.",
+    "roleLabel": "Role",
+    "roles": {
+      "super_admin": "Super admin",
+      "admin": "Admin",
+      "reception": "Reception"
+    },
+    "validation": {
+      "emailRequired": "Enter your email address.",
+      "emailInvalid": "That email address is not valid.",
+      "passwordRequired": "Enter your password.",
+      "passwordMin": "That password is too short."
+    },
+    "noPermission": {
+      "title": "You do not have access to this screen",
+      "description": "Your current role does not include this section. Contact the super admin if you need it."
+    }
+  },
+  "directory": {
+    "searchLabel": "Search by name",
+    "searchPlaceholder": "Type a doctor's name…",
+    "specialtyLabel": "Specialty",
+    "allSpecialties": "All specialties",
+    "clear": "Clear filters",
+    "resultsOne": "1 doctor",
+    "resultsTwo": "2 doctors",
+    "resultsMany": "{count} doctors",
+    "noResultsTitle": "No matching doctor",
+    "noResultsDescription": "Try a different name, or choose “All specialties”."
+  },
+  "doctor": {
+    "specialties": "Specialty",
+    "qualifications": "Qualifications & skills",
+    "schedule": "Weekly clinic hours",
+    "prices": "Consultation & service fees",
+    "services": "Services provided",
+    "viewProfile": "View profile",
+    "consultationFrom": "Consultation from",
+    "noSchedule": "No clinic hours have been published for this doctor yet.",
+    "noPrices": "No fees have been published for this doctor yet.",
+    "noQualifications": "No additional qualifications were provided.",
+    "bookingSoonTitle": "Online booking is not open for this doctor yet",
+    "bookingSoonDescription": "How these periods are organised has not been decided yet. To book now, contact reception by phone or WhatsApp.",
+    "otherDoctors": "Other doctors"
+  },
+  "schedule": {
+    "day": "Day",
+    "time": "Hours",
+    "note": "Note",
+    "openEnded": "From {from}",
+    "closedToday": "No clinic today",
+    "today": "Today",
+    "modeSlot": "Fixed appointments",
+    "modeQueue": "Queue system",
+    "modePending": "Not configured yet"
+  },
+  "price": {
+    "onRequest": "Price confirmed at reception",
+    "kind": {
+      "consultation": "Consultation",
+      "followUp": "Follow-up",
+      "session": "Session",
+      "examination": "Examination",
+      "device": "Device",
+      "procedure": "Procedure"
+    }
+  },
+  "specialtyPage": {
+    "doctorsTitle": "Doctors in this specialty",
+    "servicesTitle": "Related services",
+    "noDoctors": "No doctors are currently listed under this specialty.",
+    "doctorsCountOne": "1 doctor",
+    "doctorsCountTwo": "2 doctors",
+    "doctorsCountMany": "{count} doctors",
+    "browseAll": "All specialties"
+  },
+  "servicePage": {
+    "categoryTitle": "Category",
+    "doctorsTitle": "Doctors providing this service",
+    "specialtiesTitle": "Related specialties",
+    "pricesTitle": "Doctor fees for this service",
+    "pricesNote": "Each fee belongs to the named doctor and does not apply to other doctors. Unpublished fees are confirmed at reception.",
+    "relatedTitle": "More in this category",
+    "noDoctors": "No doctors have been linked to this service yet.",
+    "requiresBooking": "Appointment required",
+    "servicesCountOne": "1 service",
+    "servicesCountTwo": "2 services",
+    "servicesCountMany": "{count} services",
+    "allServices": "All services"
+  },
+  "labPage": {
+    "unitsTitle": "Laboratory units",
+    "contactTitle": "Laboratory numbers",
+    "sampleTitle": "Sample collection",
+    "sampleDescription": "Mawoda Atef Lab collects samples from homes, hospitals and clinics.",
+    "sampleHome": "From homes",
+    "sampleHospital": "From hospitals",
+    "sampleClinic": "From clinics",
+    "samplePending": "Online sample requests are coming soon. To arrange a collection now, call the laboratory.",
+    "hoursUnknown": "Opening hours are not published — please call to check.",
+    "unitsCountMany": "{count} specialized units"
+  },
+  "founderPage": {
+    "qualificationsTitle": "Academic qualifications",
+    "visionTitle": "Vision",
+    "messageTitle": "A word from the founder",
+    "yearUnknown": "Date not published"
+  },
+  "offersPage": {
+    "noneTitle": "No offers are running right now",
+    "noneDescription": "Omega Care has not announced any offer at the moment. Follow our official pages for new offers.",
+    "validUntil": "Valid until {date}",
+    "validFrom": "Starts {date}",
+    "discountPercentage": "{value}% off",
+    "discountFixed": "{value} off",
+    "specialPrice": "Special price",
+    "wasPrice": "Was {price}"
+  },
+  "homeSections": {
+    "doctorsTodayEmpty": "No clinics are published for today. Browse all doctors to see the weekly schedule.",
+    "specialtiesEmpty": "No specialties have been added yet.",
+    "featuredDoctorsEmpty": "No featured doctors have been selected yet.",
+    "servicesEmpty": "No services have been added yet.",
+    "offersEmpty": "No offers are running right now.",
+    "testimonialsEmpty": "No verified patient reviews have been published yet."
+  },
+  "aboutPage": {
+    "introTitle": "About Omega Care",
+    "factsTitle": "The complex in numbers",
+    "factsNote": "These figures are counted from the clinic records published on this site.",
+    "doctorsFact": "doctors & consultants",
+    "specialtiesFact": "medical specialties",
+    "servicesFact": "services & examinations",
+    "labUnitsFact": "laboratory units",
+    "exploreTitle": "Explore the complex",
+    "doctorsLink": "Doctors & consultants",
+    "specialtiesLink": "Medical specialties",
+    "servicesLink": "Services & examinations",
+    "labLink": "Mawoda Atef Lab",
+    "aestheticsLink": "Aesthetics & laser",
+    "founderLink": "Founder",
+    "locationTitle": "Location & contact"
+  },
+  "publicCache": {
+    "noticeTitle": "Changes can take up to {minutes} minutes to appear",
+    "noticeDescription": "Public site data is cached on Cloudflare's network for 30 minutes to keep database usage within the free allowance. Edits are saved to the database immediately and show here in the dashboard straight away; the public pages can take up to 30 minutes.",
+    "savedTitle": "Saved",
+    "savedDescription": "The change can take up to 30 minutes to appear on the public site."
+  },
+  "adminForm": {
+    "arabic": "العربية",
+    "english": "English",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "create": "Add",
+    "edit": "Edit",
+    "close": "Close",
+    "addLine": "Add line",
+    "removeLine": "Remove line",
+    "required": "This field is required",
+    "invalidSlug": "Use lowercase letters, numbers and hyphens only",
+    "invalidTime": "Time must be in HH:mm format",
+    "invalidNumber": "Enter a valid number",
+    "negativeNumber": "The number cannot be negative",
+    "slugHint": "Appears in the page URL; changing it after publishing is not advised.",
+    "optional": "Optional — leave blank if the information is not available",
+    "nullNote": "Blank fields are stored as “not supplied” and stay hidden from visitors.",
+    "saved": "Saved",
+    "saveFailed": "Could not save",
+    "unsavedChanges": "You have unsaved changes"
+  },
+  "adminImage": {
+    "upload": "Upload image",
+    "replace": "Replace image",
+    "remove": "Remove",
+    "hint": "JPG, PNG, WEBP or GIF, up to {max} MB. Images are uploaded to ImgBB and only the URL is stored.",
+    "manageOnImgbb": "Manage this image on ImgBB",
+    "errorSize": "The image is larger than {max} MB.",
+    "errorType": "Unsupported file type. Use JPG, PNG, WEBP or GIF.",
+    "errorUpload": "The upload failed. Please try again.",
+    "errorNotConfigured": "The ImgBB key is not configured. Check the environment settings."
+  },
+  "adminList": {
+    "search": "Search",
+    "searchPlaceholder": "Search…",
+    "add": "Add new",
+    "empty": "No records yet",
+    "emptyHint": "Start by adding the first record.",
+    "loading": "Loading…",
+    "loadFailed": "Could not load the data",
+    "retry": "Try again",
+    "active": "Visible",
+    "inactive": "Hidden",
+    "activate": "Show",
+    "deactivate": "Hide",
+    "edit": "Edit",
+    "delete": "Delete permanently",
+    "count": "{count} records",
+    "showHidden": "Also show hidden",
+    "actions": "Actions",
+    "reorderUp": "Move up",
+    "reorderDown": "Move down",
+    "orderSaved": "Order saved"
+  },
+  "adminConfirm": {
+    "deleteTitle": "Delete permanently",
+    "deleteDescription": "This record will be deleted permanently and cannot be recovered. To only hide it from the website, use “Hide” instead.",
+    "deleteTypePrompt": "Type {word} to confirm",
+    "deleteWord": "DELETE",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "deactivateTitle": "Hide from the website",
+    "deactivateDescription": "The record disappears from the public site but its data is kept."
+  },
+  "adminDoctors": {
+    "title": "Doctors",
+    "addTitle": "Add doctor",
+    "editTitle": "Edit doctor",
+    "name": "Doctor's name",
+    "jobTitle": "Title as published",
+    "bio": "Biography",
+    "qualifications": "Qualifications & skills",
+    "qualificationsAr": "Qualifications (Arabic)",
+    "qualificationsEn": "Qualifications (English)",
+    "specialties": "Specialties",
+    "specialtiesHint": "Choose at least one specialty.",
+    "image": "Doctor's photo",
+    "featured": "Featured doctor",
+    "featuredHint": "Appears in the “Featured doctors” homepage section.",
+    "showPrice": "Show fees to visitors",
+    "showPriceHint": "When off, fees are shown only inside the booking flow.",
+    "activeLabel": "Visible on the website",
+    "sortOrder": "Display order",
+    "schedules": "Clinic hours",
+    "prices": "Fees & services",
+    "specialtyRequired": "Choose at least one specialty"
+  },
+  "adminSchedules": {
+    "title": "Doctor's hours",
+    "add": "Add period",
+    "day": "Day",
+    "startTime": "From",
+    "endTime": "Until",
+    "endTimeHint": "Leave blank if the clinic does not publish a finish time.",
+    "bookingMode": "Booking mode",
+    "bookingModeHint": "Online booking stays closed for this period until a mode is chosen.",
+    "modeNotSet": "Not decided yet",
+    "modeSlot": "Fixed appointments",
+    "modeQueue": "Queue system",
+    "slotDuration": "Appointment length (minutes)",
+    "maxPerSlot": "Bookings per appointment slot",
+    "maxQueue": "Maximum queue tickets",
+    "note": "Note shown beside the period",
+    "activeLabel": "Active",
+    "slotFieldsRequired": "Appointment length and capacity are required in fixed-appointment mode",
+    "queueFieldsRequired": "Maximum queue tickets is required in queue mode",
+    "endBeforeStart": "The finish time must be after the start time"
+  },
+  "adminPrices": {
+    "title": "Fees",
+    "add": "Add item",
+    "name": "Item name",
+    "description": "Description",
+    "kind": "Type",
+    "price": "Price (EGP)",
+    "priceHint": "Leave blank if no price has been set — visitors see “confirmed at reception”.",
+    "linkedService": "Linked service",
+    "noService": "Not linked",
+    "showPrice": "Show this price to visitors",
+    "activeLabel": "Active"
+  },
+  "adminSpecialties": {
+    "title": "Specialties",
+    "addTitle": "Add specialty",
+    "editTitle": "Edit specialty",
+    "name": "Specialty name",
+    "description": "Specialty description",
+    "featured": "Featured specialty",
+    "image": "Specialty image"
+  },
+  "adminCategories": {
+    "title": "Service categories",
+    "addTitle": "Add category",
+    "editTitle": "Edit category",
+    "name": "Category name",
+    "description": "Description"
+  },
+  "adminServices": {
+    "title": "Services",
+    "addTitle": "Add service",
+    "editTitle": "Edit service",
+    "name": "Service name",
+    "description": "Service description",
+    "category": "Category",
+    "noCategory": "No category",
+    "price": "Price (EGP)",
+    "showPrice": "Show the price",
+    "requiresBooking": "Requires an appointment",
+    "doctors": "Doctors providing it",
+    "specialties": "Related specialties",
+    "featured": "Featured service",
+    "image": "Service image"
+  },
+  "adminLab": {
+    "title": "Laboratory",
+    "profileTitle": "Laboratory details",
+    "unitsTitle": "Laboratory units",
+    "name": "Laboratory name",
+    "description": "Laboratory description",
+    "phones": "Laboratory numbers",
+    "whatsapp": "Laboratory WhatsApp",
+    "openingHours": "Opening hours",
+    "openingHoursHint": "Leave blank if the hours are not published.",
+    "logo": "Laboratory logo",
+    "sampleEnabled": "Enable sample collection",
+    "sampleNote": "Sample collection wording",
+    "addUnit": "Add unit",
+    "unitName": "Unit name",
+    "unitDescription": "Unit description"
+  },
+  "adminFounder": {
+    "title": "Founder",
+    "name": "Name",
+    "jobTitle": "Title",
+    "bio": "Biography",
+    "vision": "Vision",
+    "message": "A word from the founder",
+    "image": "Founder photo",
+    "qualifications": "Academic qualifications",
+    "addQualification": "Add qualification",
+    "qualificationTitle": "Qualification",
+    "institution": "Awarding institution",
+    "year": "Year",
+    "yearHint": "Leave blank if the year is not published.",
+    "showOnHomepage": "Show on the homepage",
+    "activeLabel": "Visible on the website"
+  },
+  "adminContent": {
+    "title": "Site content",
+    "homepageTitle": "Homepage sections",
+    "homepageHint": "Control whether each section appears, and in what order.",
+    "sectionEnabled": "Visible",
+    "sortOrder": "Order",
+    "sections": {
+      "hero": "Hero",
+      "quickActions": "Quick actions",
+      "doctorsToday": "Doctors today",
+      "specialties": "Specialties",
+      "featuredDoctors": "Featured doctors",
+      "services": "Services",
+      "offers": "Offers",
+      "lab": "Laboratory",
+      "aesthetics": "Aesthetics & laser",
+      "whyUs": "Why Omega Care",
+      "founderPreview": "Founder preview",
+      "testimonials": "Patient reviews",
+      "location": "Location",
+      "bookingCta": "Booking call to action"
+    }
+  },
+  "adminSettings": {
+    "title": "Clinic settings",
+    "brandingTitle": "Branding",
+    "clinicName": "Clinic name",
+    "tagline": "Tagline",
+    "contactTitle": "Contact details",
+    "phone": "Main phone",
+    "secondaryPhone": "Secondary phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "labPhones": "Laboratory numbers",
+    "locationTitle": "Location",
+    "address": "Address",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "mapsUrl": "Google Maps URL",
+    "heroTitle": "Hero section",
+    "heroHeading": "Heading",
+    "heroSubtitle": "Subheading",
+    "footerTitle": "Footer",
+    "footerAbout": "Footer about text",
+    "footerCopyright": "Copyright line",
+    "seoTitle": "SEO settings",
+    "seoPageTitle": "Site title",
+    "seoDescription": "Site description",
+    "seoKeywords": "Keywords",
+    "socialTitle": "Social links",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "youtube": "YouTube",
+    "paymentsTitle": "Payment settings",
+    "cashEnabled": "Cash at the clinic",
+    "walletEnabled": "Mobile wallet",
+    "instapayEnabled": "InstaPay",
+    "walletNumber": "Wallet number",
+    "instapayNumber": "InstaPay account",
+    "paymentInstructions": "Payment instructions",
+    "invalidUrl": "Enter a valid URL starting with https://"
+  },
+  "adminOffers": {
+    "title": "Offers",
+    "addTitle": "Add offer",
+    "editTitle": "Edit offer",
+    "offerTitle": "Offer title",
+    "description": "Offer description",
+    "image": "Offer image",
+    "discountType": "Discount type",
+    "percentage": "Percentage",
+    "fixed": "Fixed amount",
+    "specialPrice": "Special price",
+    "discountValue": "Discount value",
+    "originalPrice": "Price before discount",
+    "offerPrice": "Offer price",
+    "startDate": "Starts",
+    "endDate": "Ends",
+    "appliesTo": "Applies to",
+    "targets": "Targeted items",
+    "targetsHint": "Leave empty to apply the offer to the whole area.",
+    "featured": "Featured offer",
+    "showOnHome": "Show on the homepage",
+    "activeLabel": "Active",
+    "endBeforeStart": "The end date must be after the start date",
+    "targetDoctor": "Doctor",
+    "targetService": "Service",
+    "targetSpecialty": "Specialty",
+    "targetLab": "Laboratory",
+    "targetAesthetics": "Aesthetics & laser"
+  }
+}

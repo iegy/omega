@@ -1,0 +1,258 @@
+rules_version = '2';
+
+// ============================================================================
+//  Omega Care — Cloud Firestore security rules (Phase 2 secure baseline)
+//
+//  Principles
+//  ----------
+//  1. Authorisation is server-side data, never a browser claim. Every admin
+//     check reads `admins/{request.auth.uid}` with `get()`, which bypasses these
+//     rules and cannot be forged by a client (spec 11).
+//  2. A successful Firebase sign-in grants NOTHING on its own. Without an
+//     `active` document in `admins/` a signed-in user is treated as a visitor.
+//  3. Public read is granted only to collections that render on the public
+//     website. Patient data (appointments, sample requests) and administrator
+//     records are never publicly readable or listable (spec BZ).
+//  4. `allow read, write: if true;` is never used anywhere in this file.
+//  5. Public *create* on `appointments` and `sampleCollectionRequests` stays
+//     CLOSED until the phases that build those forms (8 and 7). Opening them
+//     early would allow anonymous writes with no field validation. Those phases
+//     will replace `allow create: if false` with a validated rule.
+// ============================================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /* ---------------------------------------------------------------------- */
+    /*  Authorisation helpers                                                 */
+    /* ---------------------------------------------------------------------- */
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    /**
+     * Placeholder UID for unauthenticated requests. Firestore interpolates the
+     * path before the surrounding `&&` short-circuits, so building it from a
+     * null `request.auth` would raise an evaluation error on every anonymous
+     * write. The result still denies, but this keeps the logs clean.
+     */
+    function authUid() {
+      return request.auth != null ? request.auth.uid : '__anonymous__';
+    }
+
+    function adminPath() {
+      return /databases/$(database)/documents/admins/$(authUid());
+    }
+
+    function adminExists() {
+      return isSignedIn() && exists(adminPath());
+    }
+
+    /**
+     * The admin record as a map, or an empty map when the caller has none.
+     *
+     * Firestore does not reliably short-circuit a `get()` inside `&&`, so
+     * reading `.data` unconditionally would raise an evaluation error on every
+     * anonymous request. Returning `{}` and using `.get(key, default)` keeps the
+     * expression total: no errors, and a missing field still denies.
+     */
+    function adminData() {
+      return adminExists() ? get(adminPath()).data : {};
+    }
+
+    /** Signed in AND holding an authorised, enabled admin record. */
+    function isActiveAdmin() {
+      return adminData().get('active', false) == true;
+    }
+
+    function adminRole() {
+      return adminData().get('role', '');
+    }
+
+    /** Full access, including settings, admin accounts and backups. */
+    function isSuperAdmin() {
+      return isActiveAdmin() && adminRole() == 'super_admin';
+    }
+
+    /** Manages content: doctors, services, specialties, offers, lab, founder. */
+    function isContentManager() {
+      return isActiveAdmin() && adminRole() in ['super_admin', 'admin'];
+    }
+
+    /** Any authorised staff member, including reception. */
+    function isStaff() {
+      return isActiveAdmin() && adminRole() in ['super_admin', 'admin', 'reception'];
+    }
+
+    /** True when an update touches only the listed fields (never a create). */
+    function changesOnly(fields) {
+      return resource != null
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(fields);
+    }
+
+    /* ---------------------------------------------------------------------- */
+    /*  Public catalogue — readable by everyone, written by content managers   */
+    /*                                                                        */
+    /*  These documents ARE the public website (doctor profiles, prices,       */
+    /*  schedules, services, offers, lab units). Read access is intentionally  */
+    /*  open; write access never is.                                           */
+    /* ---------------------------------------------------------------------- */
+
+    match /doctors/{doctorId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /doctorServicePrices/{priceId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /doctorSchedules/{scheduleId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /scheduleExceptions/{exceptionId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /specialties/{specialtyId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /services/{serviceId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /serviceCategories/{categoryId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /offers/{offerId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /labUnits/{unitId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /labServices/{labServiceId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /founder/{documentId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /testimonials/{testimonialId} {
+      // Only published entries are rendered; the filter lives in the query, and
+      // an unpublished draft carries no sensitive data.
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /siteContent/{documentId} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    match /homepageSections/{sectionKey} {
+      allow read: if true;
+      allow write: if isContentManager();
+    }
+
+    /* ---------------------------------------------------------------------- */
+    /*  Clinic configuration — public read, super-admin write                 */
+    /*                                                                        */
+    /*  Phone numbers, address and payment numbers must render for visitors,   */
+    /*  but changing them (especially the wallet / InstaPay numbers) is a       */
+    /*  money-moving action, so it is restricted to super_admin.               */
+    /* ---------------------------------------------------------------------- */
+
+    match /clinicSettings/{documentId} {
+      allow read: if true;
+      allow write: if isSuperAdmin();
+    }
+
+    match /paymentMethods/{documentId} {
+      allow read: if true;
+      allow write: if isSuperAdmin();
+    }
+
+    match /socialLinks/{documentId} {
+      allow read: if true;
+      allow write: if isSuperAdmin();
+    }
+
+    /* ---------------------------------------------------------------------- */
+    /*  Appointments — patient data, staff only                                */
+    /*                                                                        */
+    /*  A visitor cannot list appointments, cannot read anyone else's booking,  */
+    /*  and cannot change a payment status. Public creation is deliberately     */
+    /*  closed until Phase 8 adds field validation and capacity enforcement.    */
+    /* ---------------------------------------------------------------------- */
+
+    match /appointments/{appointmentId} {
+      allow get, list: if isStaff();
+      allow create: if false; // opened with validation in Phase 8 (booking)
+      allow update: if isStaff();
+      allow delete: if isContentManager();
+    }
+
+    /* ---------------------------------------------------------------------- */
+    /*  Sample collection requests — patient contact data, staff only          */
+    /*  Public creation opens in Phase 7 with the request form.                */
+    /* ---------------------------------------------------------------------- */
+
+    match /sampleCollectionRequests/{requestId} {
+      allow get, list: if isStaff();
+      allow create: if false; // opened with validation in Phase 7 (lab form)
+      allow update: if isStaff();
+      allow delete: if isContentManager();
+    }
+
+    /* ---------------------------------------------------------------------- */
+    /*  Administrators                                                         */
+    /*                                                                        */
+    /*  - An administrator may read ONLY their own record; that single read is  */
+    /*    what the dashboard uses to resolve role + active state.               */
+    /*  - Listing every administrator is limited to super_admin.                */
+    /*  - Creating, disabling or re-roling an administrator is super_admin only, */
+    /*    so nobody can escalate their own privileges.                          */
+    /*  - The one self-write allowed is the login audit stamp, and the rule      */
+    /*    verifies that no other field changed.                                 */
+    /* ---------------------------------------------------------------------- */
+
+    match /admins/{adminId} {
+      allow get: if isSignedIn() && (request.auth.uid == adminId || isSuperAdmin());
+      allow list: if isSuperAdmin();
+
+      allow create, delete: if isSuperAdmin();
+
+      allow update: if isSuperAdmin()
+        || (
+          isSignedIn()
+          && request.auth.uid == adminId
+          && changesOnly(['lastLoginAt', 'updatedAt'])
+        );
+    }
+
+    /* ---------------------------------------------------------------------- */
+    /*  Default: deny everything not matched above.                            */
+    /* ---------------------------------------------------------------------- */
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

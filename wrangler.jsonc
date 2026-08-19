@@ -1,0 +1,61 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "name": "omega-care",
+  "main": ".open-next/worker.js",
+
+  // Pinned to the workerd build shipped with the wrangler version in
+  // package.json (workerd 1.20260811.1). Raise it deliberately together with
+  // wrangler, never ahead of it.
+  "compatibility_date": "2026-08-11",
+
+  // nodejs_compat — REQUIRED. The Next.js server rendered by OpenNext pulls in
+  //   node:buffer, node:stream, node:async_hooks, node:path, node:util and
+  //   node:crypto (OpenNext itself hashes cache keys with node:crypto). The
+  //   Firebase Web SDK also reaches for node:crypto/node:buffer polyfills.
+  //   Without this flag the Worker fails to start.
+  //
+  // global_fetch_strictly_public — recommended by the adapter. Makes a fetch()
+  //   to the site's own public URL leave the Worker and come back through the
+  //   edge, instead of being short-circuited internally. Keeps `next/image`
+  //   and any self-referencing fetch behaving the way it does in production.
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+
+  // Static output produced by `opennextjs-cloudflare build`: /brand images,
+  // /_next/static chunks, fonts, favicons. Served straight from Cloudflare's
+  // edge without waking the Worker.
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+
+  // Powers next/image. `next.config.ts` already restricts remote images to the
+  // three ImgBB hosts, so this optimizer can only ever be pointed at ImgBB or
+  // at the site's own /brand assets.
+  //
+  // Cloudflare Images includes a free monthly allowance of unique
+  // transformations; this site has a handful of brand assets plus doctor
+  // photos, so it stays well inside it. To opt out entirely, delete this block
+  // and set `images: { unoptimized: true }` in next.config.ts — see
+  // docs/cloudflare-deployment.md.
+  "images": {
+    "binding": "IMAGES"
+  },
+
+  // Environment variables are NOT set here on purpose.
+  //
+  // Every NEXT_PUBLIC_* value this app needs is inlined by Next.js at BUILD
+  // time, so it must exist in the build environment (.env.local locally, or
+  // Cloudflare Workers Build variables in CI) — putting it in wrangler.jsonc
+  // would be both ineffective and a way to leak real values into git.
+  // docs/cloudflare-deployment.md lists exactly which variables to set and
+  // where.
+  //
+  // No `vars`, no `secrets`, no KV namespace, no R2 bucket, no Durable Object
+  // and no queue: this Worker holds no state. Firestore remains the only
+  // datastore, and no clinic or patient data is copied into Cloudflare.
+
+  "observability": {
+    "enabled": true
+  }
+}
